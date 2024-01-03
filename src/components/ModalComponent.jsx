@@ -1,12 +1,11 @@
-import React , {useState , useEffect} from 'react'
+import React , {useState } from 'react'
 import loginImage from '../assets/images/loginm.png'
 import { setCredentials } from '../slices/authSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { FaTimes } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import { useRequestLoginMutation } from '../slices/userApiSlice';
 import { useLoginMutation } from '../slices/userApiSlice';
-import {  useNavigate } from 'react-router-dom';
 
 
 import { useTranslation } from 'react-i18next';
@@ -17,22 +16,15 @@ const ModalComponent = ({ showModal , close }) => {
     const [emailMode, setEmailMode] = useState(true);
     const [otp, setOtp] = useState(null);
     const dispatch = useDispatch();
-    const navigate = useNavigate();
-    const { authInfo } = useSelector((state) => state.auth);
     const { t ,i18n} = useTranslation();
 
 
 
     const [email, setEmail] = useState('');
-    const [requestLogin, { isLoading, error }] = useRequestLoginMutation();
-    const [login, { isLoading:isLoading2, error2 }] = useLoginMutation();
+    const [requestLogin, { isLoading }] = useRequestLoginMutation();
+    const [login, { isLoading:isLoading2 }] = useLoginMutation();
 
 
-    // useEffect(() => {
-    //     if (userInfo) {
-    //       navigate('/');
-    //     }
-    //   }, [navigate, userInfo]);
 
 
     const sendOtp = async (e) => {

@@ -1,6 +1,6 @@
 // ReviewsScreen.js
 
-import React, { useState } from 'react';
+import React from 'react';
 import Loader from '../../components/Loader';
 import { useGetReviewsQuery , useConfirmMutation } from '../../slices/adminApiSlice';
 import { BASE_URL } from '../../constants';
@@ -18,7 +18,7 @@ const ReviewsScreen = () => {
     refetch:loadReviews
   } = useGetReviewsQuery();
 
-  const [confirm, { isLoading:isLoading10 }] = useConfirmMutation();
+  const [confirm] = useConfirmMutation();
 
 
   const confirmReview = async (reviewId) => {

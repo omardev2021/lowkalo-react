@@ -1,7 +1,4 @@
 import React,{useState} from 'react'
-import qu from '../assets/images/qu.jpeg'
-import daf from '../assets/images/daf.png'
-import xero from '../assets/images/xero.webp'
 import { useGetServicesQuery } from '../slices/servicesApiSlice';
 import { BASE_URL } from '../constants';
 import { Link } from 'react-router-dom';

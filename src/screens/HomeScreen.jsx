@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import hero from '../assets/images/main-image.png'
 import logos from '../assets/images/logos.png'
-import qu from '../assets/images/qu.jpeg'
-import daf from '../assets/images/daf.png'
-import xero from '../assets/images/xero.webp'
+
 import FAQ from '../components/FAQ';
 import { useTranslation } from 'react-i18next';
 import { useGetServicesQuery } from '../slices/servicesApiSlice';
@@ -21,7 +19,7 @@ import Meta from '../components/Meta';
 function HomeScreen() {
     const [activeTab, setActiveTab] = useState('panel-1');
     const { t ,i18n} = useTranslation();
-    const [newsLetter, { isLoading:isLoading20 }] = useNewsletterMutation();
+    const [newsLetter] = useNewsletterMutation();
     const [email,setEmail] = useState('')
 
     const {

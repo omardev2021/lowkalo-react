@@ -21,17 +21,7 @@ function Footer() {
             <a href="mailto:info@lowkalo.com" className="mb-4">
               info@lowkalo.com <i className="fa-solid fa-arrow-right-long"></i>
             </a>
-            <div className="flex justify-center sm:justify-start">
-              <a href="https://www.instagram.com/lowkalo/" className="mr-4">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="https://wa.link/w1oyxx" target="_blank" className="mr-4">
-                <i className="fab fa-whatsapp"></i>
-              </a>
-              <a href="https://twitter.com/lowkalo/">
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
+          
           </div>
         </div>
         <div className={`w-full sm:w-1/2 lg:w-1/4 text-center ${i18n.language === 'en' ? 'sm:text-left' : 'sm:text-right'} `}>

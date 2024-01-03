@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaUser, FaSignOutAlt } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useDispatch , useSelector} from 'react-redux';

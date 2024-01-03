@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 
 function Success() {
-  const { t ,i18n} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="flex items-center justify-center h-screen">

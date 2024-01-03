@@ -1,6 +1,4 @@
 import React , {useEffect}from 'react'
-import { Link } from 'react-router-dom';
-import successImage from '../assets/images/success-image.png';
 import { useLocation } from 'react-router-dom';
 import Failure from '../components/Failure';
 import Success from '../components/Success';
@@ -17,7 +15,7 @@ function PaymentStatusScreen() {
 
     const param1 = queryParams.get('Result');
     const param2 = queryParams.get('ResponseCode');
-    const [confirm, { isLoading, error }] = useConfirmPaymentMutation();
+    const [confirm] = useConfirmPaymentMutation();
 
     useEffect(() => {
         const confirmPayment = async () => {
@@ -36,7 +34,7 @@ function PaymentStatusScreen() {
         if (param1 === 'Successful' && param2 === '000') {
           confirmPayment();
         }
-      }, [confirm, param1, param2]);
+      }, [confirm, param1, param2,dispatch]);
 
 
     

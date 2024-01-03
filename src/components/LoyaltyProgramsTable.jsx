@@ -2,7 +2,7 @@
 
 import React, { useState , useEffect } from 'react';
 import Modal from 'react-modal';
-import { FaInfo ,FaTimesCircle,FaCheckCircle,FaShoppingCart,FaQrcode,FaBuilding,FaTags, FaBusinessTime, FaChartLine, FaClipboardList, FaBalanceScale, FaInfoCircle, FaCoffee, FaPizzaSlice, FaMoneyBill, FaDollarSign, FaUserFriends, FaUserPlus, FaGift, FaPercentage, FaWallet, FaMobile, FaDesktop, FaCog, FaCommentDollar, FaUser, FaMobileAlt, FaMoneyBillAlt, FaStickyNote, FaClock, FaUsers, FaBell, FaFolderOpen, FaHeart, FaFlask, FaUserTie, FaChartBar, FaStarHalfAlt} from "react-icons/fa";
+import { FaInfo ,FaTimesCircle,FaCheckCircle,FaShoppingCart,FaQrcode,FaBuilding,FaTags, FaBusinessTime, FaChartLine, FaClipboardList, FaBalanceScale, FaCoffee, FaPizzaSlice, FaMoneyBill, FaDollarSign, FaUserFriends, FaUserPlus, FaGift, FaPercentage, FaWallet, FaMobile, FaDesktop, FaCog, FaCommentDollar, FaUser, FaMobileAlt, FaMoneyBillAlt, FaStickyNote, FaClock, FaUsers, FaBell, FaFolderOpen, FaHeart, FaFlask, FaUserTie, FaChartBar, FaStarHalfAlt} from "react-icons/fa";
 import { Tooltip } from 'react-tooltip'
 
 import { FaPlus } from 'react-icons/fa';

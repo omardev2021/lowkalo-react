@@ -1,12 +1,11 @@
-import React , {useState , useEffect} from 'react'
+import React , {useState } from 'react'
 import loginImage from '../assets/images/loginm.png'
 import { setCredentials } from '../slices/authSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { FaTimes } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import { useRequestRegisterMutation } from '../slices/userApiSlice';
 import { useLoginMutation } from '../slices/userApiSlice';
-import {  useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 
@@ -17,8 +16,6 @@ const RegisterModal = ({ showModal , close }) => {
     const [emailMode, setEmailMode] = useState(true);
     const [otp, setOtp] = useState(null);
     const dispatch = useDispatch();
-    const navigate = useNavigate();
-    const { authInfo } = useSelector((state) => state.auth);
     const { t ,i18n} = useTranslation();
 
 
@@ -26,8 +23,8 @@ const RegisterModal = ({ showModal , close }) => {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
-    const [requestRegister, { isLoading, error }] = useRequestRegisterMutation();
-    const [login, { isLoading:isLoading2, error2 }] = useLoginMutation();
+    const [requestRegister, { isLoading }] = useRequestRegisterMutation();
+    const [login, { isLoading:isLoading2 }] = useLoginMutation();
 
 
     // useEffect(() => {
@@ -40,7 +37,7 @@ const RegisterModal = ({ showModal , close }) => {
     const sendOtp = async (e) => {
         try {
             e.preventDefault();
-            const res = await requestRegister({
+           await requestRegister({
               email,
               phone,
               name

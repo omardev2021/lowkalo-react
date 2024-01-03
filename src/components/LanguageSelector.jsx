@@ -4,7 +4,7 @@ import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 
 const LanguageSelector = () => {
-  const { t, i18n } = useTranslation();
+  const {  i18n } = useTranslation();
 
   // Language options
   const languageOptions = [

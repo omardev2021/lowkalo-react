@@ -14,12 +14,11 @@ import Meta from '../components/Meta';
 
 function LessonScreen() {
   const { id: videoId } = useParams();
-  const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
   const { authInfo } = useSelector((state) => state.auth);
 
 
-  const [saveComment, { isLoading:isLoading2 }] = useSaveCommentMutation();
+  const [saveComment] = useSaveCommentMutation();
 
   const [selectedQuality, setSelectedQuality] = useState('mp4_Format_1080');
   const navigate = useNavigate()
@@ -46,7 +45,7 @@ function LessonScreen() {
     return <div>No video data available</div>;
   }
 
-  const s3BucketUrl = 'https://lowkalo-resources.s3.amazonaws.c'; // Replace with your S3 bucket URL
+  const s3BucketUrl = 'https://lowkalo-resources.s3.amazonaws.com'; // Replace with your S3 bucket URL
 
   // Assuming 'mp4_Format_1080' is the default quality
 

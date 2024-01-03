@@ -5,13 +5,13 @@ import CourseAccordion from '../components/CourseAccordion';
 import hero from '../assets/images/main-image.png'
 import { useSelector , useDispatch} from 'react-redux';
 import { useCreateOrderMutation } from '../slices/courseApiSlice';
-import {  Link, useNavigate } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import {FaCreditCard, FaTrash} from 'react-icons/fa';
 import { setCoupon , removeCoupon} from '../slices/couponSlice';
 import { useCheckMutation } from '../slices/couponApiSlice';
 
-import spinner from '../assets/images/spin2.gif'
+
 import Meta from '../components/Meta';
 
 function CourseScreen() {
@@ -24,10 +24,10 @@ function CourseScreen() {
       const { t ,i18n} = useTranslation();
       const { authInfo } = useSelector((state) => state.auth);
       const [activeTab, setActiveTab] = useState('panel-1');
-      const navigate = useNavigate();
-      const [order, { isLoading, error }] = useCreateOrderMutation();
 
-      const [check, { isLoading:isLoading10 }] = useCheckMutation();
+      const [order, { isLoading }] = useCreateOrderMutation();
+
+      const [check] = useCheckMutation();
 
       const dispatch = useDispatch();
       const {discountInfo} = useSelector((state) => state.discount);
@@ -44,7 +44,7 @@ function CourseScreen() {
       const handleOrder = async () => {
         try {
           console.log(price);
-          const total = price * 100
+          
             const res = await order({price}).unwrap();
       console.log(res.payment);
 
@@ -222,7 +222,7 @@ function CourseScreen() {
     <div className="w-full md:w-1/4  p-4   mt-4">
         {/* right side */}
     <div className="card bg-white  shadow-xl text-center mx-auto mt-12 w-80 px-3 py-5 rounded-lg" >
-      <img src={hero} className="card-img-top" alt="Course Image" />
+      <img src={hero} className="card-img-top" alt="Course cover" />
       <div className="card-body">
         <h5 className="text-xl font-bold my-5">{t('courseName')}</h5>
        

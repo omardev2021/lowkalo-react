@@ -1,15 +1,11 @@
 import React , {useState} from 'react'
 import serviceImg from '../assets/images/service.webp'
 import { Link } from 'react-router-dom';
-import xero from '../assets/images/xero.webp'
-import qu from '../assets/images/qu.jpeg'
-import daf from '../assets/images/daf.png'
 import LoyaltyProgramsTable from '../components/LoyaltyProgramsTable';
 import { useParams } from 'react-router-dom';
 import { useGetServiceDetailsQuery } from '../slices/servicesApiSlice';
 
 import { BASE_URL } from '../constants'
-import LoyaltyProgramsTable2 from '../components/LoyaltyProgramsTable2';
 import { useTranslation } from 'react-i18next';
 import { FaStar } from 'react-icons/fa';
 import Loader from '../components/Loader';
@@ -17,7 +13,7 @@ import Meta from '../components/Meta';
 
 
 function ServiceDetailScreen() {
-    const rate = 4.5; // Replace with the actual rating
+
     const { slug: serviceId } = useParams();
     const [selectedOrigin, setSelectedOrigin] = useState(null);
 

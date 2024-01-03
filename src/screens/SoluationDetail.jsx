@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import RatingSelect from '../components/RatingSelect';
-import xero from '../assets/images/xero.webp'
-import qu from '../assets/images/qu.jpeg'
-import daf from '../assets/images/daf.png'
+
 import ver from '../assets/images/ver.png'
 
 import Button from '../components/Button';
-import {FaUser , FaCheck, FaStar} from 'react-icons/fa'
+import {FaUser , FaStar} from 'react-icons/fa'
 import { useGetSoluationDetailsQuery } from '../slices/soluationsApiSlice';
 import { useParams } from 'react-router-dom';
 import { BASE_URL , SOLUATIONS_URL } from '../constants'
-import { useSaveReviewMutation } from '../slices/soluationsApiSlice';
+
 import { toast } from 'react-toastify';
-import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
 import {  useSelector } from 'react-redux';
 import Loader from '../components/Loader';
@@ -141,7 +138,7 @@ const SoluationDetail = () => {
       <div className="max-w-4xl w-full bg-white shadow-md rounded-md overflow-hidden">
         <div className="flex">
           <div className="w-1/3">
-            <img  src={`${BASE_URL}${soluation.image_path}`} className="object-cover w-full h-full" />
+            <img  src={`${BASE_URL}${soluation.image_path}`} className="object-cover w-full h-full" alt='soluation' />
           </div>
           <div className="w-2/3 p-4">
           <Link to={'#'}>              <h2 className="text-2xl font-bold mb-2 flex gap-1">
