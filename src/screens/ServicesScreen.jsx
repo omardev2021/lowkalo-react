@@ -29,7 +29,7 @@ function ServicesScreen() {
       </h1>
     </header>
     <div className="flex flex-col md:flex-row p-5 items-center" >
-    <Loader />
+    <div className="spinner  mx-auto" />
       </div>
      </>
    )

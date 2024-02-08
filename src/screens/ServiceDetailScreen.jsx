@@ -26,7 +26,7 @@ function ServiceDetailScreen() {
   return (
 <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
         {isLoading ? (
-       <div>dddd</div>
+        <div  />
       ) : error ? (
         <div>{error?.data.message || error.error}</div>
       ) : (
@@ -76,7 +76,7 @@ function ServiceDetailScreen() {
     </>
  )}
 {isLoading ? (
-       <Loader />
+       <div className="spinner  mx-auto" />
       ) : error ? (
         <div>{error?.data.message || error.error}</div>
       ) : (
@@ -108,7 +108,7 @@ function ServiceDetailScreen() {
  
     </div>
     {isLoading ? (
-  <Loader />
+  <div className="spinner  mx-auto" />
 ) : error ? (
   <div>{error?.data.message || error.error}</div>
 ) : (

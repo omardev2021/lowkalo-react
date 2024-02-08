@@ -38,9 +38,9 @@ const SoluationDetail = () => {
 
       if (isLoading) {
         return (
-          <>
-          <div></div>
-          </>
+          <div className='p-5'>
+         <div className="spinner  mx-auto" />
+          </div>
         )
       }
 
