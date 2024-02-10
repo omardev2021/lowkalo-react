@@ -19,16 +19,16 @@ const LoyaltyProgramsTable = () => {
 
   // Dummy data, replace with your actual data
   const companies = [
-    { id: 1, name: 'Mukafaat', logo: 'http://127.0.0.1:8000/images/mukafat-logo.webp', active: true },
-    { id: 2, name: 'Green Bill', logo: 'http://127.0.0.1:8000/images/greenbill-logo.webp', active: true },
-    { id: 3, name: 'UPP', logo: 'http://127.0.0.1:8000/images/upp-logo.jpg', active: true },
-    { id: 4, name: 'Resal', logo: 'http://127.0.0.1:8000/images/resal-logo.jpeg', active: true },
-    { id: 5, name: 'Loyapro', logo: 'http://127.0.0.1:8000/images/loyapro-logo.webp', active: false },
-    { id: 6, name: 'Brand wallet', logo: 'http://127.0.0.1:8000/images/brandwallet-logo.jpg', active: false },
-    { id: 7, name: 'Nugttah', logo: 'http://127.0.0.1:8000/images/nugttah-logo.png', active: false },
-    { id: 8, name: 'Koinz', logo: 'http://127.0.0.1:8000/images/koinz-loyalty-logo.webp', active: false },
-    { id: 9, name: 'Bonat', logo: 'http://127.0.0.1:8000/images/bonat-logo.webp', active: false },
-    { id: 10, name: 'Abkhus', logo: 'http://127.0.0.1:8000/images/abkhus-logo.jpg', active: false },
+    { id: 1, name: 'Mukafaat', logo: 'https://api.lowkalo.com/images/mukafat-logo.webp', active: true },
+    { id: 2, name: 'Green Bill', logo: 'https://api.lowkalo.com/images/greenbill-logo.webp', active: true },
+    { id: 3, name: 'UPP', logo: 'https://api.lowkalo.com/images/upp-logo.jpg', active: true },
+    { id: 4, name: 'Resal', logo: 'https://api.lowkalo.com/images/resal-logo.jpeg', active: true },
+    { id: 5, name: 'Loyapro', logo: 'https://api.lowkalo.com/images/loyapro-logo.webp', active: false },
+    { id: 6, name: 'Brand wallet', logo: 'https://api.lowkalo.com/images/brandwallet-logo.jpg', active: false },
+    { id: 7, name: 'Nugttah', logo: 'https://api.lowkalo.com/images/nugttah-logo.png', active: false },
+    { id: 8, name: 'Koinz', logo: 'https://api.lowkalo.com/images/koinz-loyalty-logo.webp', active: false },
+    { id: 9, name: 'Bonat', logo: 'https://api.lowkalo.com/images/bonat-logo.webp', active: false },
+    { id: 10, name: 'Abkhus', logo: 'https://api.lowkalo.com/images/abkhus-logo.jpg', active: false },
 
   ];
 

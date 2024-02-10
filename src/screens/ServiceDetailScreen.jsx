@@ -8,8 +8,9 @@ import { useGetServiceDetailsQuery } from '../slices/servicesApiSlice';
 import { BASE_URL } from '../constants'
 import { useTranslation } from 'react-i18next';
 import { FaStar } from 'react-icons/fa';
-import Loader from '../components/Loader';
+
 import Meta from '../components/Meta';
+import AccountingTable from '../components/AccountingTable';
 
 
 function ServiceDetailScreen() {
@@ -86,6 +87,21 @@ function ServiceDetailScreen() {
 
 
     <LoyaltyProgramsTable />
+</>
+        )
+      )}
+
+{isLoading ? (
+       <div className="" />
+      ) : error ? (
+        <div>{error?.data.message || error.error}</div>
+      ) : (
+        service.id === 2 && (
+<>
+<h1 className="mb-6 mt-6 text-4xl text-veryDarkBlue font-semibold text-center pt-10">{t('table')}</h1>
+
+
+    <AccountingTable />
 </>
         )
       )}
