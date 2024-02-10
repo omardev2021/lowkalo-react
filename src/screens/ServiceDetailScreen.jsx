@@ -98,7 +98,7 @@ function ServiceDetailScreen() {
       ) : (
         service.id === 2 && (
 <>
-<h1 className="mb-6 mt-6 text-4xl text-veryDarkBlue font-semibold text-center pt-10">{t('table')}</h1>
+<h1 className="mb-6 mt-6 text-4xl text-veryDarkBlue font-semibold text-center pt-10">{t('table2')}</h1>
 
 
     <AccountingTable />

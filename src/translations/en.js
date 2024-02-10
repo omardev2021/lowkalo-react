@@ -105,6 +105,7 @@ const enTranslations = {
     det:'More Details',
     visitSite:'Visit Site',
     table:"Loyalty program's soluations with it's features",
+    table2:"Accounting's soluations with it's features",
     how:"How would you rate the solution?",
     form1:"click here to select the purchase receipt",
     form2:'Write your review ...',
