@@ -210,11 +210,11 @@ function AccountingTable() {
           <div className="md:col-span-4 border p-4 bg-white">
             <h2 className="text-lg font-semibold mb-4">Feature Comparison</h2>
      {/* Preservation Section 1 */}
-     <div className="mb-8">
+     <div className="mb-8 ">
               <h3 className="text-xl font-semibold mb-2">Preparation of the basic Financial Statement</h3>
-          <div className='flex flex-row'>
+          <div className='flex flex-row '>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4 ' style={{'marginLeft':'100px'}} >
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -328,7 +328,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Preparation of VAT</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -442,7 +442,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Manage Account Receivable</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -556,7 +556,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Manage Account Payable</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -680,7 +680,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Invoices</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -794,7 +794,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Manage Account Receivable</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -908,7 +908,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Manage Account Payable</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1028,7 +1028,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Web access</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1142,7 +1142,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Create customized Invoices</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1256,7 +1256,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Generate reports by responsibility Level</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1370,7 +1370,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Multi Platform Browser access</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1484,7 +1484,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Mobile Expense</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1598,7 +1598,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Tracking</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1712,7 +1712,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">% of features in the software</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4'>
+   <div className='w-1/4' style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>

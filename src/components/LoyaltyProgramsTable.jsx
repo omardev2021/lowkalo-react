@@ -159,7 +159,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Methods of Preservation Customers</h3>
         <div className='flex flex-row'>
           {selectedCompanies.includes(1) && (
- <div className='w-1/4'>
+ <div className='w-1/4' style={{'marginLeft':'100px'}}>
  <h2 className='font-bold'>Mukafat</h2>
  <ul>
    <li className='flex gap-2 mb-1 '>
@@ -462,7 +462,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Earning Points</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -666,7 +666,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Types of rewards</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -916,7 +916,7 @@ const LoyaltyProgramsTable = () => {
         <div className='flex flex-row'>
 
 {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1104,7 +1104,7 @@ const LoyaltyProgramsTable = () => {
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
 
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1243,7 +1243,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Program Set up </h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1403,7 +1403,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Target Audience</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1538,7 +1538,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Member Based Loyalty Program </h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1667,7 +1667,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Reporting and Analytics</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1903,7 +1903,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Integration</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2111,7 +2111,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Existing Customer </h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2322,7 +2322,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Subscription Fee  </h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
