@@ -159,7 +159,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Methods of Preservation Customers</h3>
         <div className='flex flex-row'>
           {selectedCompanies.includes(1) && (
- <div className='w-1/4' style={{'marginLeft':'100px'}}>
+ <div className='w-1/4' style={{'marginLeft':'100px'}} >
  <h2 className='font-bold'>Mukafat</h2>
  <ul>
    <li className='flex gap-2 mb-1 '>
@@ -185,7 +185,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(2) && (
-      <div className='w-1/4'>
+      <div className='w-1/4' style={{'marginLeft':'100px'}}>
       <h2 className='font-bold'>Green Bill</h2>
       <ul>
         <li className='flex gap-2 mb-1 '>
@@ -209,7 +209,7 @@ const LoyaltyProgramsTable = () => {
     </div> 
 )}
          {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -241,7 +241,7 @@ const LoyaltyProgramsTable = () => {
          )}
           {selectedCompanies.includes(4) && (
 
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
    <li className='flex gap-2 mb-1 '>
@@ -276,7 +276,7 @@ const LoyaltyProgramsTable = () => {
 
 {selectedCompanies.includes(5) && (
 
-<div className='w-1/4'>
+<div className='w-1/4' style={{'marginLeft':'100px'}}>
   <h2 className='font-bold'>Loyapro</h2>
   <ul>
   <li className='flex gap-2 mb-1 '>
@@ -309,7 +309,7 @@ const LoyaltyProgramsTable = () => {
 
 {selectedCompanies.includes(6) && (
 
-<div className='w-1/4'>
+<div className='w-1/4' style={{'marginLeft':'100px'}}>
   <h2 className='font-bold'>Brand Wallet</h2>
   <ul>
   <li className='flex gap-2 mb-1 '>
@@ -367,7 +367,7 @@ const LoyaltyProgramsTable = () => {
 
 {selectedCompanies.includes(7) && (
 
-<div className='w-1/4'>
+<div className='w-1/4' style={{'marginLeft':'100px'}}>
   <h2 className='font-bold'>Nugttah</h2>
   <ul>
   <li className='flex gap-2 mb-1 '>
@@ -392,7 +392,7 @@ const LoyaltyProgramsTable = () => {
 
 {selectedCompanies.includes(8) && (
 
-<div className='w-1/4'>
+<div className='w-1/4' style={{'marginLeft':'100px'}}>
   <h2 className='font-bold'>Koinz</h2>
   <ul>
   <li className='flex gap-2 mb-1 '>
@@ -407,7 +407,7 @@ const LoyaltyProgramsTable = () => {
 
 {selectedCompanies.includes(9) && (
 
-<div className='w-1/4'>
+<div className='w-1/4' style={{'marginLeft':'100px'}}>
   <h2 className='font-bold'>Bonat</h2>
   <ul>
   <li className='flex gap-2 mb-1 '>
@@ -431,7 +431,7 @@ const LoyaltyProgramsTable = () => {
 
 {selectedCompanies.includes(10) && (
 
-<div className='w-1/4'>
+<div className='w-1/4' style={{'marginLeft':'100px'}}>
   <h2 className='font-bold'>أبخض </h2>
   <ul>
   <li className='flex gap-2 mb-1 '>
@@ -462,7 +462,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Earning Points</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -477,7 +477,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
          {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -492,7 +492,7 @@ const LoyaltyProgramsTable = () => {
           </div>
          )}
           {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -521,7 +521,7 @@ const LoyaltyProgramsTable = () => {
           </div>
           )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -544,7 +544,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -560,7 +560,7 @@ const LoyaltyProgramsTable = () => {
         )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -576,7 +576,7 @@ const LoyaltyProgramsTable = () => {
         )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -592,7 +592,7 @@ const LoyaltyProgramsTable = () => {
         )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -611,7 +611,7 @@ const LoyaltyProgramsTable = () => {
         )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -634,7 +634,7 @@ const LoyaltyProgramsTable = () => {
         )}
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>أبخض </h2>
             <ul>
               <li className='flex gap-2 mb-1 '>
@@ -666,7 +666,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Types of rewards</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -693,7 +693,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
            {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -720,7 +720,7 @@ const LoyaltyProgramsTable = () => {
           </div>
            )}
               {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -747,7 +747,7 @@ const LoyaltyProgramsTable = () => {
           </div>
               )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -775,7 +775,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
   
@@ -790,7 +790,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
   
@@ -805,7 +805,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -837,7 +837,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -858,7 +858,7 @@ const LoyaltyProgramsTable = () => {
           )}
           
           {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -879,7 +879,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>أبخض </h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -916,7 +916,7 @@ const LoyaltyProgramsTable = () => {
         <div className='flex flex-row'>
 
 {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -940,7 +940,7 @@ const LoyaltyProgramsTable = () => {
 )}
 
 {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -951,7 +951,7 @@ const LoyaltyProgramsTable = () => {
           </div>
 )}
 {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -962,7 +962,7 @@ const LoyaltyProgramsTable = () => {
           </div>
 )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
       <li className='flex gap-2 mb-1 '>
@@ -982,7 +982,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
      
@@ -1000,7 +1000,7 @@ const LoyaltyProgramsTable = () => {
 
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
      
@@ -1017,7 +1017,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1033,7 +1033,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1049,7 +1049,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1069,7 +1069,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1104,7 +1104,7 @@ const LoyaltyProgramsTable = () => {
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
 
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1115,7 +1115,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
           {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1126,7 +1126,7 @@ const LoyaltyProgramsTable = () => {
           </div>
           )}
             {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1137,7 +1137,7 @@ const LoyaltyProgramsTable = () => {
           </div>
             )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1149,7 +1149,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1160,7 +1160,7 @@ const LoyaltyProgramsTable = () => {
           </div>
           )}
           {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1173,7 +1173,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1186,7 +1186,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1199,7 +1199,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1212,7 +1212,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1243,7 +1243,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Program Set up </h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1254,7 +1254,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
           {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1265,7 +1265,7 @@ const LoyaltyProgramsTable = () => {
           </div>
           )}
             {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1276,7 +1276,7 @@ const LoyaltyProgramsTable = () => {
           </div>
             )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1288,7 +1288,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1305,7 +1305,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1322,7 +1322,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1339,7 +1339,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1356,7 +1356,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1370,7 +1370,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1403,7 +1403,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Target Audience</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1414,7 +1414,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
           {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1425,7 +1425,7 @@ const LoyaltyProgramsTable = () => {
           </div>
           )}
             {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1436,7 +1436,7 @@ const LoyaltyProgramsTable = () => {
           </div>
             )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1448,7 +1448,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1460,7 +1460,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1472,7 +1472,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1484,7 +1484,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1496,7 +1496,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1509,7 +1509,7 @@ const LoyaltyProgramsTable = () => {
 
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1538,7 +1538,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Member Based Loyalty Program </h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1548,7 +1548,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
           {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1558,7 +1558,7 @@ const LoyaltyProgramsTable = () => {
           </div>
           )}
             {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1568,7 +1568,7 @@ const LoyaltyProgramsTable = () => {
           </div>
             )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1579,7 +1579,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1590,7 +1590,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1601,7 +1601,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1612,7 +1612,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1623,7 +1623,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1635,7 +1635,7 @@ const LoyaltyProgramsTable = () => {
 
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1667,7 +1667,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Reporting and Analytics</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1678,7 +1678,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
         {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1689,7 +1689,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
         {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1704,7 +1704,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
       <li className='flex gap-2 mb-1 '>
@@ -1732,7 +1732,7 @@ const LoyaltyProgramsTable = () => {
    
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
       <li className='flex gap-2 mb-1 '>
@@ -1757,7 +1757,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1781,7 +1781,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1813,7 +1813,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1825,7 +1825,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1875,7 +1875,7 @@ const LoyaltyProgramsTable = () => {
 
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1903,7 +1903,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Integration</h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -1914,7 +1914,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
         {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1925,7 +1925,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
         {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1936,7 +1936,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1952,7 +1952,7 @@ const LoyaltyProgramsTable = () => {
        
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -1977,7 +1977,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2001,7 +2001,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2017,7 +2017,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2033,7 +2033,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2062,7 +2062,7 @@ const LoyaltyProgramsTable = () => {
 
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2111,7 +2111,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Existing Customer </h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2126,7 +2126,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
         {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2142,7 +2142,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
         {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2158,7 +2158,7 @@ const LoyaltyProgramsTable = () => {
         )}
           {selectedCompanies.includes(4) && (
 
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2174,7 +2174,7 @@ const LoyaltyProgramsTable = () => {
        
       
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2187,7 +2187,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2217,7 +2217,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2250,7 +2250,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2263,7 +2263,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2290,7 +2290,7 @@ const LoyaltyProgramsTable = () => {
 
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
             <li className='flex gap-2 mb-1 '>
@@ -2322,7 +2322,7 @@ const LoyaltyProgramsTable = () => {
             <h3 className="text-xl font-semibold mb-2">Subscription Fee  </h3>
         <div className='flex flex-row'>
         {selectedCompanies.includes(1) && (
-          <div className='w-1/4' style={{'marginLeft':'100px'}}>
+          <div className='w-1/4' style={{'marginLeft':'100px'}} >
             <h2 className='font-bold'>Mukafat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2337,7 +2337,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
         {selectedCompanies.includes(2) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Green Bill</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2355,7 +2355,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
         {selectedCompanies.includes(3) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>UPP Rewards</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2390,7 +2390,7 @@ const LoyaltyProgramsTable = () => {
           </div>
         )}
           {selectedCompanies.includes(4) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Resal</h2>
             <ul>
       <li className='flex gap-2 mb-1 '>
@@ -2440,7 +2440,7 @@ const LoyaltyProgramsTable = () => {
   
 
 {selectedCompanies.includes(5) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Loyapro</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2478,7 +2478,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(6) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Brand Wallet</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2498,7 +2498,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(7) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Nugttah</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2524,7 +2524,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(8) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Koinz</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2554,7 +2554,7 @@ const LoyaltyProgramsTable = () => {
           )}
 
 {selectedCompanies.includes(9) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>Bonat</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>
@@ -2573,7 +2573,7 @@ const LoyaltyProgramsTable = () => {
 
 
 {selectedCompanies.includes(10) && (
-          <div className='w-1/4'>
+          <div className='w-1/4' style={{'marginLeft':'100px'}}>
             <h2 className='font-bold'>ابخص</h2>
             <ul>
   <li className='flex gap-2 mb-1 '>

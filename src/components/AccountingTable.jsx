@@ -33,7 +33,10 @@ function AccountingTable() {
       { id: 5, name: 'Add', logo: 'https://api.lowkalo.com/images/202304090633m4.webp', active: true },
       { id: 6, name: 'Vom', logo: 'https://api.lowkalo.com/images/202304090630m2.jpg', active: false },
       { id: 7, name: 'McLedger', logo: 'https://api.lowkalo.com/images/202304090636m7.jpg', active: false },
-  
+      { id: 8, name: 'SMACC', logo: 'https://api.lowkalo.com/images/smacc-logo.svg', active: false },
+      { id: 9, name: 'Medaderp', logo: 'https://api.lowkalo.com/images/medad-logo.png', active: false },
+
+
     ];
   
     // Initialize selected companies with the first 4 active companies
@@ -227,7 +230,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4'  style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -239,7 +242,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4'  style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -252,7 +255,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4'  style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -266,7 +269,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -280,7 +283,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -295,7 +298,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -328,7 +331,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Preparation of VAT</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -341,7 +344,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -353,7 +356,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -366,7 +369,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -380,7 +383,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -394,7 +397,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -409,7 +412,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -442,7 +445,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Manage Account Receivable</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -455,7 +458,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -467,7 +470,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -480,7 +483,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -494,7 +497,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -508,7 +511,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -523,7 +526,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -556,7 +559,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Manage Account Payable</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -569,7 +572,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -581,7 +584,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -594,7 +597,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -608,7 +611,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -622,7 +625,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -637,7 +640,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -680,7 +683,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Invoices</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -693,7 +696,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -705,7 +708,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -718,7 +721,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -732,7 +735,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -746,7 +749,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -761,7 +764,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -794,7 +797,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Manage Account Receivable</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -807,7 +810,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -819,7 +822,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -832,7 +835,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -846,7 +849,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -860,7 +863,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -875,7 +878,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -908,7 +911,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Manage Account Payable</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -921,7 +924,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -933,7 +936,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -946,7 +949,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -960,7 +963,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -974,7 +977,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -989,7 +992,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1028,7 +1031,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Web access</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1041,7 +1044,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1053,7 +1056,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1066,7 +1069,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1080,7 +1083,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1094,7 +1097,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1109,7 +1112,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1142,7 +1145,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Create customized Invoices</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1155,7 +1158,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1167,7 +1170,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1180,7 +1183,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1194,7 +1197,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1208,7 +1211,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1223,7 +1226,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1256,7 +1259,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Generate reports by responsibility Level</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1269,7 +1272,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1281,7 +1284,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1294,7 +1297,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1308,7 +1311,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1322,7 +1325,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1337,7 +1340,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1370,7 +1373,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Multi Platform Browser access</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1383,7 +1386,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1395,7 +1398,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1408,7 +1411,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1422,7 +1425,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1436,7 +1439,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1451,7 +1454,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1484,7 +1487,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Mobile Expense</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1497,7 +1500,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1509,7 +1512,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1522,7 +1525,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1536,7 +1539,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1550,7 +1553,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1565,7 +1568,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1598,7 +1601,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">Tracking</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1611,7 +1614,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1623,7 +1626,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1636,7 +1639,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1650,7 +1653,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1664,7 +1667,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1679,7 +1682,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1712,7 +1715,7 @@ function AccountingTable() {
               <h3 className="text-xl font-semibold mb-2">% of features in the software</h3>
           <div className='flex flex-row'>
             {selectedCompanies.includes(1) && (
-   <div className='w-1/4' style={{'marginLeft':'100px'}}>
+   <div className='w-1/4' style={{'marginLeft':'100px'}} style={{'marginLeft':'100px'}}>
    <h2 className='font-bold'>Xero</h2>
    <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1725,7 +1728,7 @@ function AccountingTable() {
             )}
   
   {selectedCompanies.includes(2) && (
-        <div className='w-1/4'>
+        <div className='w-1/4' style={{'marginLeft':'100px'}}>
         <h2 className='font-bold'>QuickBooks</h2>
         <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1737,7 +1740,7 @@ function AccountingTable() {
       </div> 
   )}
            {selectedCompanies.includes(3) && (
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Qoyod</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1750,7 +1753,7 @@ function AccountingTable() {
            )}
             {selectedCompanies.includes(4) && (
   
-            <div className='w-1/4'>
+            <div className='w-1/4' style={{'marginLeft':'100px'}}>
               <h2 className='font-bold'>Dafater</h2>
               <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1764,7 +1767,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(5) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Add</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1778,7 +1781,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(6) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>Vom</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
@@ -1793,7 +1796,7 @@ function AccountingTable() {
   
   {selectedCompanies.includes(7) && (
   
-  <div className='w-1/4'>
+  <div className='w-1/4' style={{'marginLeft':'100px'}}>
     <h2 className='font-bold'>McLedger</h2>
     <ul>
    <li className='flex gap-2 mb-1 '>
