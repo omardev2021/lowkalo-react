@@ -12,6 +12,7 @@ module.exports = {
         softBlue: '#4115BA',
         lightBlue: '#541BF1',
         softRed: '#00E6A7',
+        purpleCustom:'#6E41F5',
         grayishBlue: 'hsl(229, 8%, 60%)',
         veryDarkBlue: '#150a42',
       },

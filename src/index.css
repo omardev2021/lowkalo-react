@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: #F3F4FF;
-    overflow-x: hidden;
+    background-color: white;
+    overflow-x: auto;
 
 }
 
@@ -257,4 +257,33 @@ width: 40%;
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+.section-border {
+  position: relative;
+}
+
+.section-border::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #E5E7EB; /* Light gray */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E5E7EB; /* Light gray */
+  position: absolute;
+  left: -8px; /* Adjust based on the border width */
+  transform: translateX(-50%);
+}
+
+.circle.active {
+  background-color: #6366F1; /* Change to your active color */
 }

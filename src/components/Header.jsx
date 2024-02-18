@@ -63,7 +63,7 @@ function Header() {
       setShowModal2(true)
     }
   return (
-    <nav className="container relative mx-auto p-6" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+    <nav className="container relative mx-auto p-6 sticky" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
     <div className="flex items-center justify-between space-x-20 my-6">
       <div className="z-30">
           {/* <h1 className='font-bold text-veryDarkBlue text-2xl'>Lowkalo</h1> */}

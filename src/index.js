@@ -24,6 +24,8 @@ import SoluationDetail from './screens/SoluationDetail';
 import ProfileScreen from './screens/ProfileScreen';
 import AdminRoute from './components/AdminRoute';
 import ReviewsScreen from './screens/admin/ReviewsScreen';
+import LandingScreen from './screens/LandingScreen';
+import CategoriesScreen from './screens/CategoriesScreen';
 // import 'react-tooltip/dist/react-tooltip.css'
 
 
@@ -32,13 +34,14 @@ import ReviewsScreen from './screens/admin/ReviewsScreen';
 const router = createBrowserRouter(
   createRoutesFromElements(
 <Route path='/' element={<App />}>
-      <Route index={true} path='/' element={<HomeScreen />} />
+      <Route index={true} path='/' element={<LandingScreen />} />
       <Route path='/lessons/:id' element={<LessonScreen />} />
       <Route path='/course' element={<CourseScreen />} />
       <Route path='/services' element={<ServicesScreen />} />
       <Route path='/soluations/:id' element={<SoluationDetail />} />
       <Route path='/services/:type/:slug' element={<ServiceDetailScreen />} />
       <Route path='/profile' element={<ProfileScreen />} />
+      <Route path='/cat' element={<CategoriesScreen />} />
 
       <Route path='/payment-status' element={<PaymentStatusScreen />} />
 
