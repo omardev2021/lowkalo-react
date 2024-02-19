@@ -9,6 +9,8 @@ import Meta from '../components/Meta';
 import hero3 from '../assets/images/low3.png'
 import hero2 from '../assets/images/low2.png'
 import hero4 from '../assets/images/low4.png'
+import hero5 from '../assets/images/low5.png'
+
 function ServicesScreen() {
 
     const {
@@ -46,7 +48,7 @@ function ServicesScreen() {
                  <Meta title={t('servicesTitle')} />
 
          <header className="TOP-SERVICES bg-softBlue p-12 h-80 relative">
-      <h1 className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl font-bold leading-tight">
+      <h1 className="text-white font-dela absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl font-bold leading-tight">
       {t('ser')}
         <br />
         <hr className="opacity-100 bg-softRed w-20 mx-auto mt-4 h-2 border-4" />
@@ -72,7 +74,7 @@ function ServicesScreen() {
  
     </div> */}
 <div className='sticky top-10'>
-    <h2 className="my-6 text-4xl text-veryDarkBlue font-semibold "> {t('cat')}
+    <h2 className="my-6 text-4xl text-veryDarkBlue font-semibold font-dela"> {t('cat')}
 </h2>
 <ul >
 {isLoading ? (
@@ -82,7 +84,7 @@ function ServicesScreen() {
       ) : (
             data.data.map((service) => (
               <Link to={`/services/${service.type}/${service.slug}`}>
-                <li>{i18n.language === 'en' ? service.name : service.name_ar}</li>
+                <li >{i18n.language === 'en' ? service.name : service.name_ar}</li>
                 </Link>
 
                 ))
@@ -103,8 +105,8 @@ function ServicesScreen() {
       </div>
       <div className="flex flex-col space-y-6 lg:w-1/2">
         
-        <h3 className="text-3xl font-semibold text-center lg:text-left">
-        <span className='text-sm text-purpleCustom'>Front of house</span>
+        <h3 className="text-3xl font-dela font-semibold text-center lg:text-left">
+        <span className='text-sm text-purpleCustom font-dela'>Front of house</span>
         <br />
           Point Of Sale (POS)
         </h3>
@@ -128,8 +130,8 @@ function ServicesScreen() {
         </div>
       </div>
       <div className="flex flex-col space-y-6 lg:w-1/2">
-        <h3 className="text-3xl font-semibold text-center lg:text-left">
-        <span className='text-sm text-purpleCustom'>Front of house</span>
+        <h3 className="text-3xl font-dela font-semibold text-center lg:text-left">
+        <span className='text-sm text-purpleCustom font-dela'>Front of house</span>
         <br />
         Accounting Software
 
@@ -156,8 +158,8 @@ function ServicesScreen() {
         </div>
       </div>
       <div className="flex flex-col space-y-6 lg:w-1/2">
-        <h3 className="text-3xl font-semibold text-center lg:text-left">
-        <span className='text-sm text-purpleCustom'>Front of house</span>
+        <h3 className="text-3xl font-dela font-semibold text-center lg:text-left">
+        <span className='text-sm text-purpleCustom font-dela'>Front of house</span>
         <br />
         Loyalty Programs
 
@@ -177,6 +179,33 @@ function ServicesScreen() {
       </div>
         </div>
 
+
+        <div id='pos' className="flex flex-col lg:flex-row items-center lg:space-x-7 mb-10">
+        <div className="lg:w-1/2">
+        <div style={{ position: 'sticky', top: '20px' }}>
+          <img src={hero5} alt="Point Of Sale" className="mx-auto" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-6 lg:w-1/2">
+        <h3 className="text-3xl font-dela font-semibold text-center lg:text-left">
+        <span className='text-sm text-purpleCustom font-dela'>Front of house</span>
+        <br />
+        Online  Ordering ( Websit   & Mobile App)
+
+        </h3>
+        <p className="text-lg text-center lg:text-left">
+        online ordering software  allows restaurants to have their own branded applications and websites
+</p>
+        <div className="text-center lg:text-left">
+          <Link
+            to={'/services/front-of-house/loyalty'}
+            className="px-6 py-3 font-semibold text-white bg-softBlue rounded-lg hover:bg-white hover:text-softBlue hover:border-softBlue border-2 border-transparent hover:border-2"
+          >
+            Learn about online ordering programs 
+          </Link>
+        </div>
+      </div>
+        </div>
         
 
         

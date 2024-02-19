@@ -16,6 +16,10 @@ module.exports = {
         grayishBlue: 'hsl(229, 8%, 60%)',
         veryDarkBlue: '#150a42',
       },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        dela: ['"Dela Gothic One"', 'cursive'], // Custom key for Dela Gothic One
+      },
       backgroundImage: () => ({
         dots: "url('../public/bg-dots.svg')",
       }),

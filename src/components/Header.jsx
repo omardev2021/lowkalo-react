@@ -73,15 +73,15 @@ function Header() {
           </Link>
       </div>
       <div className={`hidden items-center space-x-6 uppercase text-grayishBlue md:flex `}>
-  <Link to={'/'} className={`text-veryDarkBlue hover:text-softRed ${i18n.language === 'ar' ? 'ml-5' : ''}`}>
+  <Link to={'/'} className={`text-veryDarkBlue font-bold hover:text-softRed ${i18n.language === 'ar' ? 'ml-5' : ''}`}>
     {t('header1')}
   </Link>
 
-  <Link to={'/course'} className="text-veryDarkBlue hover:text-softRed">
+  <Link to={'/course'} className="text-veryDarkBlue font-bold hover:text-softRed">
     {t('header2')}
   </Link>
 
-  <Link to={'/services'} className="text-veryDarkBlue hover:text-softRed">
+  <Link to={'/services'} className="text-veryDarkBlue font-bold hover:text-softRed">
     {t('header3')}
   </Link>
 </div>
