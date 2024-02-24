@@ -2,7 +2,7 @@ import React , {useState , useEffect } from 'react'
 import en from '../assets/images/en.png'
 import { useTranslation } from 'react-i18next';
 import CourseAccordion from '../components/CourseAccordion';
-import hero from '../assets/images/main-image.png'
+import hero from '../assets/images/low1.png'
 import { useSelector , useDispatch} from 'react-redux';
 import { useCreateOrderMutation } from '../slices/courseApiSlice';
 import {  Link } from 'react-router-dom';

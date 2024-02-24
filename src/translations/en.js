@@ -153,7 +153,12 @@ const enTranslations = {
     courseTitle:'Lowkalo : Inventory management course for restaurants and cafes for beginners',
 
     servicesTitle:'Lowkalo - Services - Front of House , Back of House and more.',
-
+    all:'All',
+    lowestPrice:'The Lowest Price',
+    highestRated:'The Highest Rated',
+    local:'Local',
+    global:'Global',
+    front:'Front of house'
     // <h1>test</h1>
     // <h1>test test</h1>
 

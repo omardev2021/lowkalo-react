@@ -155,7 +155,12 @@ header10:'التسجيل',
     courseTitle:'لوكالو : دورة إدارة المخزون للمطاعم والكافيهات للمبتدئين',
     
     servicesTitle:'لوكالو - الخدمات - فرونت اوف هاوس ، باك اوف هاوس والمزيد',
-
+    all:'الكل',
+    lowestPrice:'الاقل سعراً',
+    highestRated:'الاعلي تقيماً',
+    local:'محلي',
+    global:'عالمي',
+    front:'فرونت اوف هاوس'
   };
   
   export default arTranslations;

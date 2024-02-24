@@ -14,32 +14,9 @@ function LandingScreen() {
     const [newsLetter] = useNewsletterMutation();
     const [email,setEmail] = useState('')
 
-    const [activeSection, setActiveSection] = useState(0);
 
-    const handleScroll = () => {
-      const sections = ['pos', 'accounting', 'loyalty'];
-      const windowHeight = window.innerHeight;
-  
-      const activeIndex = sections.findIndex((id) => {
-        const element = document.getElementById(id);
-        if (!element) return false;
-        const rect = element.getBoundingClientRect();
-        return rect.top < windowHeight / 2 && rect.top + rect.height > windowHeight / 2;
-      });
-  
-      setActiveSection(activeIndex);
-    };
-
-    const circlePositions = {
-        0: '25%', // First circle position
-        1: '50%', // Second circle position
-        2: '75%', // Third circle position
-      };
-  
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+ 
+      
     
 
 
@@ -80,7 +57,7 @@ function LandingScreen() {
         </p>
       </div>
       <div className="lg:w-1/2">
-        <img src={hero} alt="" className="mx-auto lg:mx-0" />
+        <img src={hero} alt="" className="mx-auto lg:mx-0 transition-transform duration-500 ease-in-out scale-110 -mt-10" />
       </div>
     </div>
   
@@ -92,12 +69,12 @@ function LandingScreen() {
       </div>
     </section>
   
-    <div id="panels" className="container mx-auto p-6">
-      <div className="flex flex-col py-5 lg:flex-row lg:space-x-7">
+    <div id="panels" className="container mx-auto p-6" style={{ position: 'relative' }}>
+      <div className="flex flex-col py-5 lg:flex-row lg:space-x-7 sticky-section">
         <div className="lg:w-1/2 flex justify-center">
           <img src={hero2} alt="" className="mx-auto lg:mx-0" />
         </div>
-        <div className="flex flex-col space-y-6 pt-20 lg:w-1/2">
+        <div className="flex flex-col space-y-6 pt-20 lg:w-1/2 sticky-section">
           <h3 className="text-3xl font-dela font-semibold text-center lg:text-left">
             Beginner Guide on Managing your Inventory
           </h3>
@@ -116,25 +93,19 @@ function LandingScreen() {
       </div>
     </div>
     <section id="solutions" className="mt-5 mb-10 relative">
-  <div className="container mx-auto px-6 relative">  
+  <div className="container mx-auto px-6 ">  
         <h2 className="text-4xl font-dela font-semibold text-veryDarkBlue text-center lg:text-5xl ">F&B SOLUTIONS</h2>
         
-        {/* Vertical Line and Circles */}
-        {/* <div className="absolute left-1/2 top-20 bottom-20 hidden lg:block">
-  <div className="w-1 bg-gray-300 absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0"></div>
-  <div className={`w-6 h-6 rounded-full bg-${activeSection === 0 ? 'softBlue' : 'gray-300'} absolute transform -translate-x-1/2`} style={{ top: '25%' }}></div>
-  <div className={`w-6 h-6 rounded-full bg-${activeSection === 1 ? 'softBlue' : 'gray-300'} absolute transform -translate-x-1/2`} style={{ top: '50%' }}></div>
-  <div className={`w-6 h-6 rounded-full bg-${activeSection === 2 ? 'softBlue' : 'gray-300'} absolute transform -translate-x-1/2`} style={{ top: '75%' }}></div>
-</div> */}
 
         {/* POS Service */}
-        <div id='pos' className="flex flex-col lg:flex-row items-center lg:space-x-7 ">
-        <div className="lg:w-1/2">
-        <div >
-          <img src={hero3} alt="Point Of Sale" className="mx-auto" />
-        </div>
+        <div id='all' style={{ position: 'relative' }}>
+            <div className="flex flex-col lg:flex-row items-center lg:space-x-7 ">
+        <div className="lg:w-1/2 " >
+       
+          <img src={hero3}  alt="Point Of Sale" className="mx-auto" />
+
       </div>
-      <div className="flex flex-col space-y-6 lg:w-1/2" style={{ position: 'sticky', top: '0' }}>
+      <div className="flex flex-col space-y-6 lg:w-1/2 sticky-section" >
         <h3 className="text-3xl font-dela font-semibold text-center lg:text-left">
         <span className='text-sm text-purpleCustom font-dela'>Front of house</span>
         <br />
@@ -151,14 +122,13 @@ function LandingScreen() {
           </Link>
         </div>
       </div>
-        </div>
-        
-        {/* Accounting Software Service */}
-        <div id="accounting" className="flex flex-col lg:flex-row-reverse items-center lg:space-x-reverse lg:space-x-7 ">
+      </div>
+
+      <div id="accounting" className="flex flex-col lg:flex-row-reverse items-center lg:space-x-reverse lg:space-x-7 " >
         <div className="lg:w-1/2" >
         <img src={hero4} alt="Loyalty Programs" className="mx-auto" />
       </div>
-      <div className="flex flex-col space-y-6 lg:w-1/2" style={{ position: 'sticky', top: '0' }}>
+      <div className="flex flex-col space-y-6 lg:w-1/2 sticky-section" >
         <h3 className="text-3xl font-dela font-semibold text-center lg:text-left">
         <span className='text-sm text-purpleCustom font-dela'>Front of house</span>
         <br />
@@ -176,13 +146,12 @@ function LandingScreen() {
         </div>
       </div>
         </div>
-        
-        {/* Loyalty Programs Service */}
+
         <div id="loyalty" className="flex flex-col lg:flex-row items-center lg:space-x-7 ">
         <div className="lg:w-1/2" style={{ position: 'sticky', top: '20px' }}>
         <img src={hero4} alt="Food Delivery" className="mx-auto" /> {/* Assume hero5 is your food delivery image */}
       </div>
-      <div className="flex flex-col space-y-6 lg:w-1/2">
+      <div className="flex flex-col space-y-6 lg:w-1/2 sticky-section">
         <h3 className="text-3xl font-dela font-semibold text-center lg:text-left">
         <span className='text-sm text-purpleCustom font-dela'>Front of house</span>
         <br />
@@ -200,6 +169,13 @@ function LandingScreen() {
         </div>
       </div>
         </div>
+        </div>
+        
+        {/* Accounting Software Service */}
+        
+        
+        {/* Loyalty Programs Service */}
+        
 
         {/* Show All Services Button */}
         <div className="mt-10 text-center">

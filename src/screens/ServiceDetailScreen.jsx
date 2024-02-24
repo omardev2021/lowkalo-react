@@ -11,12 +11,12 @@ import { FaStar } from 'react-icons/fa';
 
 import Meta from '../components/Meta';
 import AccountingTable from '../components/AccountingTable';
+import FilterButton from '../components/FilterButton';
 
 
 function ServiceDetailScreen() {
 
     const { slug: serviceId } = useParams();
-    const [selectedOrigin, setSelectedOrigin] = useState(null);
 
     const {
         data: service,
@@ -24,6 +24,40 @@ function ServiceDetailScreen() {
         error,
       } = useGetServiceDetailsQuery(serviceId);
       const { t ,i18n} = useTranslation();
+
+      const [filter, setFilter] = useState('all');
+
+      const applyFilter = (solutions) => {
+        switch (filter) {
+          case 'lowestPrice':
+            return [...solutions].sort((a, b) => a.price - b.price);
+          case 'highestRated':
+            return [...solutions].sort((a, b) => b.average_rating - a.average_rating);
+          case 'local':
+            return solutions.filter(sol => sol.origin === 'ksa');
+          case 'global':
+            return solutions.filter(sol => sol.origin !== 'ksa');
+          default:
+            return solutions;
+        }
+      };
+    
+      const filteredSolutions = applyFilter(service?.soluations ?? []);
+      const filterOptions = ['all', 'lowestPrice', 'highestRated', 'local', 'global'];
+
+      if(isLoading) {
+        return (
+         
+        
+        <div style={{'padding':'200px'}}> 
+
+         <div className="spinner  mx-auto" />
+         </div>  
+      
+        )
+      }
+
+
   return (
 <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
         {isLoading ? (
@@ -107,59 +141,59 @@ function ServiceDetailScreen() {
       )}
 
 
-<h1 className="mb-6 mt-10 pt-10 text-4xl text-veryDarkBlue font-semibold text-center">{t('top')}</h1>
-<div className='flex space-x-3 justify-center my-3'>
-    <button  className={`p-4 text-sm font-semibold ${i18n.language === 'ar' ? 'ml-3' : ''}  rounded shadow-md  border-softBlue md:text-base  ${selectedOrigin === null ? 'text-white bg-softBlue ' : 'bg-white text-softBlue'}`} onClick={()=> setSelectedOrigin(null)}>
-    {t('all')}
-  </button>
-  <button  className={`p-4 text-sm font-semibold ${selectedOrigin === 'ksa' ? 'text-white bg-softBlue ' : 'bg-white text-softBlue'} rounded shadow-md  md:text-base `} onClick={()=> setSelectedOrigin('ksa')}>
-  {t('ksa')}
-  </button>
-  <button  className={`p-4 text-sm font-semibold ${selectedOrigin === 'uae' ? 'text-white bg-softBlue ' : 'bg-white text-softBlue'} rounded shadow-md  md:text-base `} onClick={()=> setSelectedOrigin('uae')}>
-  {t('uae')}
-  </button>
-  <button  className={`p-4 text-sm font-semibold ${selectedOrigin === 'kw' ? 'text-white bg-softBlue ' : 'bg-white text-softBlue'} rounded shadow-md  md:text-base `} onClick={()=> setSelectedOrigin('kw')}>
-  {t('kw')}
-  </button>
- 
-    </div>
-    {isLoading ? (
-  <div className="spinner  mx-auto" />
-) : error ? (
-  <div>{error?.data.message || error.error}</div>
-) : (
-  service.soluations
-    .filter(sol => !selectedOrigin || sol.origin === selectedOrigin)
-    .map((sol) => (
-      <div className="flex justify-center p-4" key={sol.id}>
-        <div className="max-w-4xl w-full bg-white shadow-md rounded-md overflow-hidden">
-          <div className="flex">
-            <div className="w-1/3">
-              <img src={`${BASE_URL}${sol.image_path}`} alt={'ss'} className="object-cover w-full h-full" />
-            </div>
-            <div className="w-2/3 p-4">
-              <Link to={'#'}>
-                <h2 className="text-2xl font-bold mb-2 flex gap-1">
-                  {i18n.language === 'en' ? sol.name : sol.name_ar}
-                  <FaStar />{sol.average_rating.slice(0,3)}
-                </h2>
-              </Link>
-              <p className="text-gray-700 max-w-lg">{i18n.language === 'en' ? sol.body : sol.body_ar}</p>
-              <div className="mt-4">
-                <Link to={`/soluations/${sol.id}`}>
-                  <button className="p-4 text-sm font-semibold text-white bg-softBlue rounded shadow-md border-2 border-softBlue md:text-base hover:bg-white hover:text-softBlue">
-                    {t('det')}
-                  </button>
-                </Link>
+
+<div className="p-4">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="mb-6 mt-10 pt-10 text-4xl text-veryDarkBlue font-semibold text-center">{t('top')}</h1>
+
+        {/* Filtering Section */}
+        <div className="flex justify-center gap-4 mb-6">
+        {filterOptions.map(option => (
+          <FilterButton
+            key={option}
+            isActive={filter === option}
+            onClick={() => setFilter(option)}
+          >
+            {t(option)} {/* Assuming you have translations set up for each filter option */}
+          </FilterButton>
+        ))}
+        </div>
+
+        {/* Solutions Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {isLoading ? (
+            <div className="spinner mx-auto" />
+          ) : error ? (
+            <div>{error?.data.message || error.error}</div>
+          ) : (
+            filteredSolutions.map((sol) => (
+              <div key={sol.id} className="overflow-hidden rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md">
+                <div className="relative overflow-hidden rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md shadow-xl">
+                  <img src={`${BASE_URL}${sol.image_path}`} alt={sol.name} className="w-full object-cover" style={{height: '200px'}} />
+                </div>
+                <div>
+                  <div className="flex justify-center items-center mt-1">
+                    <h2 className="text-xl font-bold mt-2 text-center text-gray-800 mr-2">
+                      {i18n.language === 'en' ? sol.name : sol.name_ar}
+                    </h2>
+                    <FaStar className="text-veryDarkBlue" />
+                    <span className="text-gray-600 ml-1">{sol.average_rating.slice(0,3)}</span>
+                  </div>
+                  <p className='ml-20'>Price starts from: {sol.price} SAR</p>
+                  <div className="text-center mt-3">
+                    <Link to={`/solutions/${sol.id}`}>
+                      <button className="py-2 px-4 text-sm font-semibold text-white bg-softBlue rounded hover:bg-softBlue-dark transition-colors duration-300">
+                        {t('det')}
+                      </button>
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            ))
+          )}
         </div>
       </div>
-    ))
-)}
-
-
+    </div>
     
     </div>
   )
