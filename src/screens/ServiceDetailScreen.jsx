@@ -169,7 +169,7 @@ function ServiceDetailScreen() {
             filteredSolutions.map((sol) => (
               <div key={sol.id} className="overflow-hidden rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md">
                 <div className="relative overflow-hidden rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md shadow-xl">
-                  <img src={`${BASE_URL}${sol.image_path}`} alt={sol.name} className="w-full object-cover" style={{height: '200px'}} />
+                  <img src={`${BASE_URL}${sol.image_path}`} alt={sol.name} className="w-full sol-image" style={{height: '200px'}} />
                 </div>
                 <div>
                   <div className="flex justify-center items-center mt-1">
@@ -181,7 +181,7 @@ function ServiceDetailScreen() {
                   </div>
                   <p className='ml-20'>Price starts from: {sol.price} SAR</p>
                   <div className="text-center mt-3">
-                    <Link to={`/solutions/${sol.id}`}>
+                    <Link to={`/soluations/${sol.id}`}>
                       <button className="py-2 px-4 text-sm font-semibold text-white bg-softBlue rounded hover:bg-softBlue-dark transition-colors duration-300">
                         {t('det')}
                       </button>

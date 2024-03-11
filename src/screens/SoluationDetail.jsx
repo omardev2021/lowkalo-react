@@ -136,17 +136,17 @@ const SoluationDetail = () => {
     {/* first card */}
                     <div className="flex justify-center p-4" dir={`${i18n.language === 'en' ? 'ltr' : 'rtl'}`}>
       <div className="max-w-4xl w-full bg-white shadow-md rounded-md overflow-hidden">
-        <div className="flex">
-          <div className="w-1/3">
-            <img  src={`${BASE_URL}${soluation.image_path}`} className="object-cover w-full h-full" alt='soluation' />
+        <div className="flex flex-col">
+          <div className="">
+            <img  src={`${BASE_URL}${soluation.image_path}`} className="sol-image w-full h-full max-h-[400px]" alt='soluation' />
           </div>
-          <div className="w-2/3 p-4">
+          <div className=" p-4">
           <Link to={'#'}>              <h2 className="text-2xl font-bold mb-2 flex gap-1">
                {i18n.language === 'en' ? soluation.name : soluation.name_ar}
                <FaStar />{soluation.average_rating.slice(0,3)}
               </h2>
             </Link>
-            <p className="text-gray-700 max-w-lg">{i18n.language === 'en' ? soluation.body : soluation.body_ar}</p>
+            <p className="text-gray-700 ">{i18n.language === 'en' ? soluation.body : soluation.body_ar}</p>
             <div className="mt-4">
       <h2 className="text-2xl font-bold my-5">{t('how')}</h2>
       <form onSubmit={(e)=>handleCommentSubmit(e)}>

@@ -22,6 +22,13 @@ function ServicesScreen() {
 
       const [activeService, setActiveService] = useState(null);
       const serviceRefs = useRef([]);
+
+      const [showAll, setShowAll] = useState(false);
+      
+    
+      const toggleShowAll = () => {
+        setShowAll(!showAll);
+      };
     
       // Initialize refs array to match the number of services
       useEffect(() => {
@@ -95,31 +102,60 @@ function ServicesScreen() {
   
          <div className="flex flex-col md:flex-row p-5 relative" >
 
-<div className="w-1/4  p-4  mt-4 sticky top-0">
-  
-<div className='sticky top-10'>
-    <h2 className="my-6 text-4xl text-veryDarkBlue font-semibold font-dela"> {t('cat')}
-</h2>
-<ul >
-{isLoading ? (
-     <Loader />
-      ) : error ? (
-        <div>{error?.data.message || error.error}</div>
-      ) : (
-            data.data.map((service,index) => (
+         <div className="w-1/4 p-4 mt-4 md:sticky md:top-0 ">
+      <div className="md:sticky md:top-10">
+        <h2 className="my-6 text-4xl text-veryDarkBlue font-semibold font-dela">
+          {t('cat')}
+        </h2>
+        <ul>
+          {isLoading ? (
+            <Loader />
+          ) : error ? (
+            <div>{error?.data.message || error.error}</div>
+          ) : (
+            data.data.map((service, index) => (
               <a key={index} href={`#service-${index}`}>
-              <li className={`flex items-center gap-2 ${activeService === index ? "text-softBlue font-bold" : "text-gray-800"} hover:text-softBlue cursor-pointer`}>
-                {activeService === index && (
-                  <span className="text-softBlue">●</span> // Circle indicator for active item
-                )}
-                {i18n.language === 'en' ? service.name : service.name_ar}
-              </li>
-            </a>
-                ))
-                )}
-</ul>
-</div>
-
+                <li
+                  className={`flex items-center gap-2 ${
+                    activeService === index
+                      ? 'text-softBlue font-bold'
+                      : 'text-gray-800'
+                  } hover:text-softBlue cursor-pointer`}
+                >
+                  {activeService === index && (
+                    <span className="text-softBlue">●</span>
+                  )}
+                  {i18n.language === 'en'
+                    ? service.name
+                    : service.name_ar}
+                </li>
+              </a>
+            )).slice(0, showAll ? data.data.length : 15) // Slicing based on showAll state
+          )}
+        </ul>
+        {data.data.length > 5 && (
+          <button
+            onClick={toggleShowAll}
+            className="text-gray-500 hover:text-gray-800 flex items-center mt-2"
+          >
+            <span className="mr-2">
+              {showAll ? 'Show Less' : 'Show More'}
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 6.293a1 1 0 011.414 0L10 8.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414zM10 16a1 1 0 01-1-1V5a1 1 0 112 0v10a1 1 0 01-1 1z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+        )}
+      </div>
     </div>
 
     <div className="w-full md:w-3/4  p-4  mt-4">

@@ -63,7 +63,7 @@ function Header() {
       setShowModal2(true)
     }
   return (
-    <nav className="container relative mx-auto p-6 sticky" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+    <nav className="container relative mx-auto p-6 sticky z-20" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
     <div className="flex items-center justify-between space-x-20 my-6">
       <div className="z-30">
           {/* <h1 className='font-bold text-veryDarkBlue text-2xl'>Lowkalo</h1> */}
@@ -73,15 +73,15 @@ function Header() {
           </Link>
       </div>
       <div className={`hidden items-center space-x-6 uppercase text-grayishBlue md:flex `}>
-  <Link to={'/'} className={`text-veryDarkBlue font-bold hover:text-softRed ${i18n.language === 'ar' ? 'ml-5' : ''}`}>
+  <Link to={'/'} className={`text-veryDarkBlue font-bold text-lg hover:text-softRed ${i18n.language === 'ar' ? 'ml-5' : ''}`}>
     {t('header1')}
   </Link>
 
-  <Link to={'/course'} className="text-veryDarkBlue font-bold hover:text-softRed">
+  <Link to={'/course'} className="text-veryDarkBlue text-lg font-bold hover:text-softRed">
     {t('header2')}
   </Link>
 
-  <Link to={'/services'} className="text-veryDarkBlue font-bold hover:text-softRed">
+  <Link to={'/services'} className="text-veryDarkBlue text-lg font-bold hover:text-softRed">
     {t('header3')}
   </Link>
 </div>
