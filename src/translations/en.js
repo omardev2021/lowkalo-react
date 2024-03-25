@@ -158,7 +158,8 @@ const enTranslations = {
     highestRated:'The Highest Rated',
     local:'Local',
     global:'Global',
-    front:'Front of house'
+    front:'Front of house',
+    moreAbout:'More Details & Companies'
     // <h1>test</h1>
     // <h1>test test</h1>
 

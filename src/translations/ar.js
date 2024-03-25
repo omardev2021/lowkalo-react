@@ -160,7 +160,8 @@ header10:'التسجيل',
     highestRated:'الاعلي تقيماً',
     local:'محلي',
     global:'عالمي',
-    front:'فرونت اوف هاوس'
+    front:'فرونت اوف هاوس',
+    moreAbout:'تفاصيل اكثر وشركات الفئة'
   };
   
   export default arTranslations;

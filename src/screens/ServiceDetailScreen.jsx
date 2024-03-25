@@ -75,7 +75,7 @@ function ServiceDetailScreen() {
                 <header className="top-s bg-softBlue py-24 relative z-5">
                 <div className="container">
                   <span className={`text-white absolute top-10 ${i18n.language === 'en' ? 'ml-10' : 'mr-10'}`}>{t('services')}/{i18n.language === 'en' ? service.name : service.name_ar}</span>
-                  <div className={`title absolute bottom-0 ${i18n.language === 'en' ? 'ml-10' : 'mr-10'} text-white`}>
+                  <div className={`title absolute bottom-5 ${i18n.language === 'en' ? 'ml-10' : 'mr-10'} text-white`}>
                     <h1 className="font-bold text-5xl">{i18n.language === 'en' ? service.name : service.name_ar}</h1>
                   </div>
                 </div>
@@ -86,9 +86,9 @@ function ServiceDetailScreen() {
                
  
 
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <div className="main-content flex flex-wrap">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 p-5">
           <div className="mt-5 pt-5">
             <h1 className="text-3xl font-bold mb-4">{i18n.language === 'en' ? service.question : service.question_ar}
 </h1>
@@ -147,7 +147,7 @@ function ServiceDetailScreen() {
         <h1 className="mb-6 mt-10 pt-10 text-4xl text-veryDarkBlue font-semibold text-center">{t('top')}</h1>
 
         {/* Filtering Section */}
-        <div className="flex justify-center gap-4 mb-6">
+        <div className="flex justify-end gap-4 mb-6">
         {filterOptions.map(option => (
           <FilterButton
             key={option}
@@ -167,7 +167,7 @@ function ServiceDetailScreen() {
             <div>{error?.data.message || error.error}</div>
           ) : (
             filteredSolutions.map((sol) => (
-              <div key={sol.id} className="overflow-hidden rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md">
+              <div key={sol.id} className="overflow-hidden rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md m-5 p-5">
                 <div className="relative overflow-hidden rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md shadow-xl">
                   <img src={`${BASE_URL}${sol.image_path}`} alt={sol.name} className="w-full sol-image" style={{height: '200px'}} />
                 </div>

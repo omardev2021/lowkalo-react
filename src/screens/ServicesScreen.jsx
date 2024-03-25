@@ -187,7 +187,7 @@ function ServicesScreen() {
                   to={`/services/${service.type}/${service.slug}`}
                   className="px-6 py-3 font-semibold text-white bg-softBlue rounded-lg hover:bg-white hover:text-softBlue hover:border-softBlue border-2 border-transparent hover:border-2"
                 >
-                  <span className='font-semibold'>{service.name}</span> companies
+                  <span className='font-semibold'>{t('moreAbout')}</span> 
                 </Link>
               </div>
             </div>
